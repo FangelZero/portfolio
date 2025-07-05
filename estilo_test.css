@@ -4,8 +4,11 @@
 }
 
 body {
-  background-image: url(images/materials/Fondo_Mesa\ de\ trabajo\ 1.png);
-  background-size: cover;
+  background-image: url(images/materials/Background.png);
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: 100% 100%;
+    z-index: -1;
 }
 
 header{
@@ -59,13 +62,16 @@ nav a{
   padding: 0 4px;
   margin: auto;
   width: 800px;
+  flex-direction: row
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 20%;
-  max-width: 20%;
+  flex: 24%;
+  max-width: 24%;
   padding: 0 4px;
+  display: flex;
+  flex-direction: column;
 }
 
 .column img {
