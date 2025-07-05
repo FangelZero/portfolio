@@ -1,0 +1,53 @@
+*{
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  background-image: url(images/materials/Fondo_Mesa\ de\ trabajo\ 1.png);
+}
+
+header{
+width: 100%;
+height: 200px;
+text-align: center;
+background-image: url(images/materials/Header4.png);
+background-size: 50%;
+background-repeat: no-repeat;
+background-position: center;
+background-position-y: top;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: "Baloo 2";
+  font-size: 50px;
+}
+
+p {
+  font-family: "Inter";
+  font-size: 20px;
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+nav{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+nav a{
+  text-decoration: none;
+  font-family: "Baloo 2";
+  font-size: 30px;
+  color: white;
+}
