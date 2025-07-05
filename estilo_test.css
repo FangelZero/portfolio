@@ -13,7 +13,7 @@ body {
 
 header{
 width: 100%;
-height: 200px;
+height: 12.5em;
 text-align: center;
 background-image: url(images/materials/Header4.png);
 background-size: 50%;
@@ -29,10 +29,18 @@ h1 {
   font-size: 50px;
 }
 
+h2 {
+  color: white;
+  text-align: center;
+  font-family: "Baloo 2";
+  font-size: 30px;
+}
+
 p {
   font-family: "Inter";
   font-size: 20px;
   text-align: center;
+  color: white;
 }
 
 .center {
@@ -61,7 +69,7 @@ nav a{
   flex-wrap: wrap;
   padding: 0 4px;
   margin: auto;
-  width: 800px;
+  width: 1000px;
   flex-direction: row
 }
 
@@ -72,12 +80,41 @@ nav a{
   padding: 0 4px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .column img {
-  margin-top: 8px;
+  margin: 2% 5%;
   vertical-align: middle;
   width: 100%;
+  border-radius: 5%;
+  
+  transition: all 0.3s ease;  
+  justify-content: center;
+  align-items: center;
+
+}
+
+.column img::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    top: -100%;
+    left: -100%;
+    transition: all 0.5s ease;
+}
+
+.column img:hover{
+  margin: 4% 7%;
+  box-shadow: 0 5px 15px #581908;
+
+  transform: scale(1.05) translateY(-5px);
+}
+
+.column img:hover::before {
+    top: 100%;
+    left: 100%;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
