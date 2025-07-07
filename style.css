@@ -16,24 +16,38 @@
     flex: 33% !important;
   }
 }
+
 body {
   background-image: url("images/materials/Background.png");
     background-size: 100vw;
     background-attachment:fixed;
     background-position: 100% 100%;
     z-index: -1;
+    align-items: center;
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 header {
-  width: 100vw;
-  height: 12.5em;
+  width: 60vw;
+  height: 25.5em;
   text-align: center;
-  background-image: url("images/materials/Header4.png");
-  background-size: 50%;
+  background-image: url("images/materials/Header5-01.png");
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: top;
+  background-position-x: center;
+  position: fixed;
+  justify-content: center;
 }
+
+section {
+margin-top: 17em;
+
+}
+
 
 h1 {
   color: white;
@@ -82,18 +96,24 @@ nav a {
   flex-wrap: wrap;
   padding: 0 4px;
   margin: auto;
-  width: 1000px;
+  width: 71.875em;
   flex-direction: row;
+  background-image: url(images/materials/gallerybg.png);
+  background-position: center;
+  background-size: 100%;
+  background-position-y: top;
+  justify-content: center;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 24%;
-  max-width: 24%;
+  max-width: 20%;
   padding: 0 4px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 5em;
 }
 
 .column img {
