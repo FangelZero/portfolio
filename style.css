@@ -17,6 +17,29 @@
   }
 }
 
+
+#Portfolio {
+cursor: pointer;
+}
+
+#Portfolio:hover {
+fill: #AE7435;
+}
+#About_me {
+cursor: pointer;
+}
+
+#About_me:hover {
+fill: #AE7435;
+}#Comms {
+cursor: pointer;
+}
+
+#Comms:hover {
+fill: #AE7435;
+}
+
+
 body {
   background-image: url("images/materials/Background.png");
     background-size: 100vw;
@@ -31,9 +54,8 @@ body {
 
 header {
   width: 60vw;
-  height: 25.5em;
+  height: 30.5em;
   text-align: center;
-  background-image: url("images/materials/Header5-01.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
