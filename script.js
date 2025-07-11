@@ -23,9 +23,9 @@ modalImage.onclick = () => modal.style.display = "none";
 
 
 //SVG logic
-const portfolio = $("#portfolio")
-const aboutMe = $("#about_me")
-const comms = $("#comms")
+const portfolio = $("#Portfolio")
+const aboutMe = $("#About_me")
+const comms = $("#Comms")
 
 const changeColor = (element) => {
   if (element instanceof SVGPathElement) element.style.fill = "#AE7435"

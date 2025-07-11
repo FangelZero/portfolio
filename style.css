@@ -18,7 +18,7 @@
 }
 
 
-/* #Portfolio {
+#Portfolio {
 cursor: pointer;
 }
 
@@ -31,13 +31,15 @@ cursor: pointer;
 
 #About_me:hover {
 fill: #AE7435;
-}#Comms {
+}
+
+#Comms {
 cursor: pointer;
 }
 
 #Comms:hover {
 fill: #AE7435;
-} */
+}
 
 
 body {
@@ -54,21 +56,21 @@ body {
 
 header {
   width: 60vw;
-  height: 30.5em;
-  text-align: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-y: top;
-  background-position-x: center;
   position: fixed;
-  justify-content: center;
+  left: 50%;
+  top: 0%;
+  transform: translateX(-50%);
 }
 
+.svg {
+  position: sticky;
+  top: 0%;
+  margin: 0%;
+  padding: 0%;
+}
 
 section {
 margin-top: 17em;
-
 }
 
 
