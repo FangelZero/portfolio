@@ -2,6 +2,11 @@
   padding: 0%;
   margin: 0%;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 @media screen and (max-width: 1000px) {
   body::before {
     rotate: 90deg;
@@ -17,9 +22,34 @@
   }
 }
 
-footer{
-  object-fit: fill;
 
+footer{
+  position: sticky;
+  bottom: 0;
+  height: 5em;
+  padding-top: 10em;
+  margin-top: 10em;
+  z-index: -1;
+}
+
+.anchor {
+scroll-margin-top: 20em
+}
+
+#garden { 
+  position: static;
+  bottom: 0%;
+  overflow: visible;
+  margin-bottom: -6%;
+}
+
+:target {
+  outline: none;
+}
+
+
+body {
+  margin: 0%  ;
 }
 
 .drive{
@@ -96,12 +126,10 @@ opacity: 0%;
 
 body {
   background-image: url("images/materials/Background.png");
-    background-size: 100vw;
     background-attachment:fixed;
-    background-position: 100% 100%;
+    background-position: 100%;
+    background-size: cover;
     z-index: -1;
-    align-items: center;
-    align-content: center;
 }
 
 header {
@@ -113,11 +141,15 @@ header {
   left: 50%;
   top: 0%;
   transform: translateX(-50%);
+  height: 15em;
 }
+
+
 
 .svg {
   margin-top: -2%;
   padding-top: 0%;;
+  height: 15em;
 }
 
 section {
@@ -172,33 +204,41 @@ nav a {
 }
 
 .row {
-margin-left: 10%;
-margin-right: 10%;
-padding: 5%;
-padding-top: 20em;
-}
-
-.column {
-}
-
-.left {
-  float: left;
-  width: 25%;
-  position: fixed;
-}
-.right {
+  
   width: 75%;
+  padding: 6em;
+  margin-top: 11.5em;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.column{
+  padding-right: 6em;
+}
+
+.index {
+  margin-top: 2em;
+  position: fixed;
+  padding: 2%;
+  float: left;
+  width: 15%;
+  text-align: center;
+}
+
+.index h1 {
+  font-size: 3em;
+  margin-bottom: 0em;
+}
+
+.content{
+  
+  float: right;
+  width: 60%;
 }
 
 .tos {
-    background-color: #FCD2A0;
+  
+  background-color: #FCD2A0;
   padding: 5%;
   border-radius: 1em;
 }
@@ -206,3 +246,41 @@ padding-top: 20em;
 .tos h2{
     text-align: left;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+
+li a {
+  width: 100%;
+  font-size: 1.75em;
+  font-weight: bold;
+   margin: 0.25em;
+  padding: 0.25em;
+  background-color: #FCD2A0;
+  border-radius: 0.5em;
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Baloo 2";
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #e7a85b;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;}
+  }
