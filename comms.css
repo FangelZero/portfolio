@@ -133,6 +133,7 @@ opacity: 0%;
 #Comms2 {
 cursor: pointer;
   transition: all 0.3s ease;
+  fill:#ffcc8d
 
 }
 
@@ -142,11 +143,13 @@ opacity: 0%;
 
 
 body {
-  background-image: url("images/materials/Background.png");
+    background-image: url("images/materials/Background.png");
+    background-size: 100vw;
     background-attachment:fixed;
-    background-position: 100%;
-    background-size: cover;
+    background-position: 100% 100%;
     z-index: -1;
+    align-items: center;
+    align-content: center;
 }
 
 header {
@@ -204,20 +207,6 @@ p {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-}
-
-nav {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-}
-
-nav a {
-  text-decoration: none;
-  font-family: "Baloo 2";
-  font-size: 30px;
-  color: white;
 }
 
 .row {
@@ -295,6 +284,10 @@ li a:hover {
   transition: all 0.3s ease;
 }
 
+.index li.active a{
+background-color: #ffedd7;
+  color: rgb(255, 201, 130);
+}
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1000px) {

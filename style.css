@@ -65,6 +65,7 @@ opacity: 50%;
 #Portfolio2 {
 cursor: pointer;
   transition: all 0.3s ease;
+  fill:#ffcc8d
 
 }
 
@@ -92,6 +93,7 @@ cursor: pointer;
 #Comms2:hover {
 opacity: 0%;
 }
+
 
 
 body {
