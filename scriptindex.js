@@ -2,7 +2,7 @@ const modal = document.getElementById("modal");
 const modalImage = modal.querySelector("img")
 const caption = document.getElementById("caption");
 const span = document.getElementById("close");
-const allImages = document.querySelectorAll(".row .column img")
+const allImages = document.querySelectorAll(".rew .culumn img")
 
 const $ = (i) => document.querySelector(i);
 

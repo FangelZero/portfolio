@@ -9,7 +9,7 @@ $('a').click(function(){
 
 // Cache selectors
 var topMenu = $(".index"),
-    topMenuHeight = topMenu.outerHeight()+15,
+    topMenuHeight = topMenu.outerHeight()+100,
     // All list items
     menuItems = topMenu.find("a"),
     // Anchors corresponding to menu items
